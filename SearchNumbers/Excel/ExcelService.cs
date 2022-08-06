@@ -13,13 +13,6 @@ namespace SearchNumbers.Excel
 {
     public class ExcelService
     {
-        public static async Task<ObservableCollection<City>> GetAllCities(ObservableCollection<City> cities)
-        {
-            WorkSheet ws = InitializeWorksheet();
-
-            return cities;
-        }
-
         public static ObservableCollection<Advertisement> GetAdvertisements(int minPrice, int maxPrice)
         {
             WorkSheet ws = InitializeWorksheet();

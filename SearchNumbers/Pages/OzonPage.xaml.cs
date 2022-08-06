@@ -1,5 +1,4 @@
-﻿using SearchNumbers.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SearchNumbers
+namespace SearchNumbers.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для OzonPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OzonPage : Page
     {
-        public MainWindow()
+        public OzonPage()
         {
             InitializeComponent();
-            Special.FrameManager.frame = MainFrame;
-            Special.FrameManager.frame.Navigate(new OzonPage());
-            //Special.FrameManager.frame.Navigate(new Pages.SearchNumbersPage());
         }
     }
 }
